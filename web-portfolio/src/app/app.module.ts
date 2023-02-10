@@ -19,10 +19,17 @@ import { MdbTabsModule } from 'mdb-angular-ui-kit/tabs';
 import { MdbTooltipModule } from 'mdb-angular-ui-kit/tooltip';
 import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LandingComponent } from './landing/landing.component';
+import {RouterModule} from "@angular/router";
+import { ResumeComponent } from './resume/resume.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LandingComponent,
+    ResumeComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +49,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MdbTabsModule,
     MdbTooltipModule,
     MdbValidationModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    RouterModule,
+    RouterModule.forRoot([
+      {path: '', component: LandingComponent},
+      {path: 'landing', component: LandingComponent},
+      {path: 'resume', component: ResumeComponent}
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
