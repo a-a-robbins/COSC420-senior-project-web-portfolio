@@ -13,6 +13,7 @@
 }
 
 //responsive buttons
+//xs
 .btn-sq-xs {
   font-size: 8px;
   text-align: center;
@@ -48,8 +49,9 @@
   transform: translate(80%, -60%);
 }
 
+//small
 .btn-sq-sm {
-  font-size: 12px;
+  font-size: 10px;
   width: 4rem;
   height: 4rem;
 }
@@ -57,28 +59,168 @@
 #btn-resume-sm {
   position: absolute;
   top: 60%;
-  left: 35%;
+  left: 30%;
   transform: translate(50%, -60%);
 }
 
 #btn-code-projects-sm {
   position: absolute;
   top: 60%;
-  left: 45%;
+  left: 43%;
   transform: translate(60%, -60%);
 }
 
 #btn-creative-collection-sm {
   position: absolute;
   top: 60%;
-  left: 55%;
+  left: 56%;
   transform: translate(70%, -60%);
 }
 
 #btn-backstory-sm {
   position: absolute;
   top: 60%;
-  left: 65%;
+  left: 69%;
+  transform: translate(80%, -60%);
+}
+
+//md
+.btn-sq-md {
+  font-size: 12px;
+  width: 5rem;
+  height: 5rem;
+}
+
+#btn-resume-md {
+  position: absolute;
+  top: 60%;
+  left: 30%;
+  transform: translate(50%, -60%);
+}
+
+#btn-code-projects-md {
+  position: absolute;
+  top: 60%;
+  left: 43%;
+  transform: translate(60%, -60%);
+}
+
+#btn-creative-collection-md {
+  position: absolute;
+  top: 60%;
+  left: 56%;
+  transform: translate(70%, -60%);
+}
+
+#btn-backstory-md {
+  position: absolute;
+  top: 60%;
+  left: 69%;
+  transform: translate(80%, -60%);
+}
+
+//lg
+.btn-sq-lg {
+  font-size: 14px;
+  width: 6rem;
+  height: 6rem;
+}
+
+#btn-resume-lg {
+  position: absolute;
+  top: 60%;
+  left: 30%;
+  transform: translate(50%, -60%);
+}
+
+#btn-code-projects-lg {
+  position: absolute;
+  top: 60%;
+  left: 43%;
+  transform: translate(60%, -60%);
+}
+
+#btn-creative-collection-lg {
+  position: absolute;
+  top: 60%;
+  left: 56%;
+  transform: translate(70%, -60%);
+}
+
+#btn-backstory-lg {
+  position: absolute;
+  top: 60%;
+  left: 69%;
+  transform: translate(80%, -60%);
+}
+
+//xl
+.btn-sq-xl {
+  font-size: 16px;
+  width: 7rem;
+  height: 7rem;
+}
+
+#btn-resume-xl {
+  position: absolute;
+  top: 60%;
+  left: 30%;
+  transform: translate(50%, -60%);
+}
+
+#btn-code-projects-xl {
+  position: absolute;
+  top: 60%;
+  left: 43%;
+  transform: translate(60%, -60%);
+}
+
+#btn-creative-collection-xl {
+  position: absolute;
+  top: 60%;
+  left: 56%;
+  transform: translate(70%, -60%);
+}
+
+#btn-backstory-xl {
+  position: absolute;
+  top: 60%;
+  left: 69%;
+  transform: translate(80%, -60%);
+}
+
+//xxl
+.btn-sq-xxl {
+  font-size: 18px;
+  width: 8rem;
+  height: 8rem;
+}
+
+#btn-resume-xxl {
+  position: absolute;
+  top: 60%;
+  left: 30%;
+  transform: translate(50%, -60%);
+}
+
+#btn-code-projects-xxl {
+  position: absolute;
+  top: 60%;
+  left: 43%;
+  transform: translate(60%, -60%);
+}
+
+#btn-creative-collection-xxl {
+  position: absolute;
+  top: 60%;
+  left: 56%;
+  transform: translate(70%, -60%);
+}
+
+#btn-backstory-xxl {
+  position: absolute;
+  top: 60%;
+  left: 69%;
   transform: translate(80%, -60%);
 }
 
