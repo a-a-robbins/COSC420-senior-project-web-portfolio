@@ -12,6 +12,7 @@
   margin: .5rem;
 }
 
+//responsive buttons
 .btn-sq-xs {
   font-size: 8px;
   text-align: center;
@@ -46,6 +47,41 @@
   left: 65%;
   transform: translate(80%, -60%);
 }
+
+.btn-sq-sm {
+  font-size: 12px;
+  width: 4rem;
+  height: 4rem;
+}
+
+#btn-resume-sm {
+  position: absolute;
+  top: 60%;
+  left: 35%;
+  transform: translate(50%, -60%);
+}
+
+#btn-code-projects-sm {
+  position: absolute;
+  top: 60%;
+  left: 45%;
+  transform: translate(60%, -60%);
+}
+
+#btn-creative-collection-sm {
+  position: absolute;
+  top: 60%;
+  left: 55%;
+  transform: translate(70%, -60%);
+}
+
+#btn-backstory-sm {
+  position: absolute;
+  top: 60%;
+  left: 65%;
+  transform: translate(80%, -60%);
+}
+
 
 .flavor {
   background-color: hotpink;
