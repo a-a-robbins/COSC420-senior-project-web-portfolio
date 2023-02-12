@@ -1,11 +1,28 @@
-<div class = "container scaleable-wrapper" id = "scaleable-wrapper">
-  <div class = "very-specific-design" id = "very-specific-design">
+<div class = "container">
     <h1 class = "welcome-text">Hello, welcome to my web portfolio!</h1>
     <p>please have a look around...you can start by picking your favorite flavor:</p>
+  <div class = "ice-cream-container">
     <img class = "ice-cream-cart" src = "./assets/images/ice-cream-cart.png" alt = "ice cream cart"/>
-    <button class = "btn flavor">Code Projects</button>
-    <button class = "btn flavor">Resume</button>
-    <button class = "btn flavor">Creative Collection</button>
-    <button class = "btn flavor">Backstory</button>
+<!--    for xs/sm containers-->
+    <div class = "container-xs container-sm d-block d-sm-block d-sm-none">
+<!--      <ul>-->
+<!--        <li>-->
+          <button class = "btn-sq-xs flavor" id = "btn-code-projects-xs">Code Projects</button>
+<!--        </li>-->
+        <button class = "btn-sq-xs flavor" id = "btn-resume-xs">Resume</button>
+        <button class = "btn-sq-xs flavor" id = "btn-creative-collection-xs">Creative Collection</button>
+        <button class = "btn-sq-xs flavor" id = "btn-backstory-xs">Backstory</button>
+<!--      </ul>-->
+    </div>
+<!--    end xs/sm containers-->
+<!--    for md containers-->
+    <div class = "container-md d-none d-md-block d-lg-none">
+      <button class = "btn-sq-md flavor" id = "btn-code-projects-md">Code Projects</button>
+    </div>
+<!--    end md containers-->
+<!--    for lg containers-->
+<!--    end lg containers-->
+<!--    for xl containers-->
+<!--    end xl containers-->
   </div>
 </div>
