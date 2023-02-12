@@ -1,6 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 @import 'mdb-angular-ui-kit/assets/scss/mdb.scss';
 
+body {
+  //background-color: lightcyan;
+  background-color: darkslateblue;
+}
+
+h1, h2, h3, h4, p {
+  color: white;
+}
+
 .page-title {
   padding: 1rem;
 }
+
