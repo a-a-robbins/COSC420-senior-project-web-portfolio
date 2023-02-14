@@ -23,13 +23,15 @@ import { LandingComponent } from './landing/landing.component';
 import {RouterModule} from "@angular/router";
 import { ResumeComponent } from './resume/resume.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { CodeProjectsComponent } from './code-projects/code-projects.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingComponent,
     ResumeComponent,
-    NavbarComponent
+    NavbarComponent,
+    CodeProjectsComponent
   ],
   imports: [
     BrowserModule,
@@ -54,7 +56,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     RouterModule.forRoot([
       {path: '', component: LandingComponent},
       {path: 'landing', component: LandingComponent},
-      {path: 'resume', component: ResumeComponent}
+      {path: 'resume', component: ResumeComponent},
+      {path: 'code-projects', component: CodeProjectsComponent}
     ])
   ],
   providers: [],
