@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {NavbarComponent} from "../navbar/navbar.component";
 
 @Component({
   selector: 'app-resume',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./resume.component.scss']
 })
 export class ResumeComponent {
-
+  constructor() {
+    NavbarComponent;
+  }
 }
