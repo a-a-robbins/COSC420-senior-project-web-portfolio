@@ -24,6 +24,7 @@ import {RouterModule} from "@angular/router";
 import { ResumeComponent } from './resume/resume.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { CodeProjectsComponent } from './code-projects/code-projects.component';
+import { CreativeCollectionComponent } from './creative-collection/creative-collection.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { CodeProjectsComponent } from './code-projects/code-projects.component';
     LandingComponent,
     ResumeComponent,
     NavbarComponent,
-    CodeProjectsComponent
+    CodeProjectsComponent,
+    CreativeCollectionComponent
   ],
   imports: [
     BrowserModule,
@@ -57,7 +59,8 @@ import { CodeProjectsComponent } from './code-projects/code-projects.component';
       {path: '', component: LandingComponent},
       {path: 'landing', component: LandingComponent},
       {path: 'resume', component: ResumeComponent},
-      {path: 'code-projects', component: CodeProjectsComponent}
+      {path: 'code-projects', component: CodeProjectsComponent},
+      {path: 'creative-collection', component: CreativeCollectionComponent}
     ])
   ],
   providers: [],
