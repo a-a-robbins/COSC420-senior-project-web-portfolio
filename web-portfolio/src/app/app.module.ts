@@ -25,6 +25,9 @@ import { ResumeComponent } from './resume/resume.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { CodeProjectsComponent } from './code-projects/code-projects.component';
 import { CreativeCollectionComponent } from './creative-collection/creative-collection.component';
+import { PhotojournalComponent } from './creative-collection/photojournal/photojournal.component';
+import { MusingsComponent } from './creative-collection/musings/musings.component';
+import { VisualArtComponent } from './creative-collection/visual-art/visual-art.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +36,10 @@ import { CreativeCollectionComponent } from './creative-collection/creative-coll
     ResumeComponent,
     NavbarComponent,
     CodeProjectsComponent,
-    CreativeCollectionComponent
+    CreativeCollectionComponent,
+    PhotojournalComponent,
+    MusingsComponent,
+    VisualArtComponent
   ],
   imports: [
     BrowserModule,
@@ -60,7 +66,10 @@ import { CreativeCollectionComponent } from './creative-collection/creative-coll
       {path: 'landing', component: LandingComponent},
       {path: 'resume', component: ResumeComponent},
       {path: 'code-projects', component: CodeProjectsComponent},
-      {path: 'creative-collection', component: CreativeCollectionComponent}
+      {path: 'creative-collection', component: CreativeCollectionComponent},
+      {path: 'creative-collection/photojournal', component: PhotojournalComponent},
+      {path: 'creative-collection/musings', component: MusingsComponent},
+      {path: 'creative-collection/visual-art', component: VisualArtComponent}
     ])
   ],
   providers: [],
