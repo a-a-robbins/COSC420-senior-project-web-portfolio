@@ -28,6 +28,7 @@ import { CreativeCollectionComponent } from './creative-collection/creative-coll
 import { PhotojournalComponent } from './creative-collection/photojournal/photojournal.component';
 import { MusingsComponent } from './creative-collection/musings/musings.component';
 import { VisualArtComponent } from './creative-collection/visual-art/visual-art.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { VisualArtComponent } from './creative-collection/visual-art/visual-art.
     CreativeCollectionComponent,
     PhotojournalComponent,
     MusingsComponent,
-    VisualArtComponent
+    VisualArtComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
@@ -69,7 +71,8 @@ import { VisualArtComponent } from './creative-collection/visual-art/visual-art.
       {path: 'creative-collection', component: CreativeCollectionComponent},
       {path: 'creative-collection/photojournal', component: PhotojournalComponent},
       {path: 'creative-collection/musings', component: MusingsComponent},
-      {path: 'creative-collection/visual-art', component: VisualArtComponent}
+      {path: 'creative-collection/visual-art', component: VisualArtComponent},
+      {path: 'about', component: AboutComponent}
     ])
   ],
   providers: [],
