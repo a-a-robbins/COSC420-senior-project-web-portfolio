@@ -23,13 +23,25 @@ import { LandingComponent } from './landing/landing.component';
 import {RouterModule} from "@angular/router";
 import { ResumeComponent } from './resume/resume.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { CodeProjectsComponent } from './code-projects/code-projects.component';
+import { CreativeCollectionComponent } from './creative-collection/creative-collection.component';
+import { PhotojournalComponent } from './creative-collection/photojournal/photojournal.component';
+import { MusingsComponent } from './creative-collection/musings/musings.component';
+import { VisualArtComponent } from './creative-collection/visual-art/visual-art.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingComponent,
     ResumeComponent,
-    NavbarComponent
+    NavbarComponent,
+    CodeProjectsComponent,
+    CreativeCollectionComponent,
+    PhotojournalComponent,
+    MusingsComponent,
+    VisualArtComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
@@ -54,7 +66,13 @@ import { NavbarComponent } from './navbar/navbar.component';
     RouterModule.forRoot([
       {path: '', component: LandingComponent},
       {path: 'landing', component: LandingComponent},
-      {path: 'resume', component: ResumeComponent}
+      {path: 'resume', component: ResumeComponent},
+      {path: 'code-projects', component: CodeProjectsComponent},
+      {path: 'creative-collection', component: CreativeCollectionComponent},
+      {path: 'creative-collection/photojournal', component: PhotojournalComponent},
+      {path: 'creative-collection/musings', component: MusingsComponent},
+      {path: 'creative-collection/visual-art', component: VisualArtComponent},
+      {path: 'about', component: AboutComponent}
     ])
   ],
   providers: [],

@@ -1,71 +1,47 @@
 <header>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <!-- Container wrapper -->
-    <div class="container-fluid">
-      <!-- Navbar brand -->
-      <a class="navbar-brand" href="#">A's Web Portfolio</a>
-
-      <!-- Toggle button -->
-      <button
-        class="navbar-toggler"
-        type="button"
-        (click)="basicNavbar.toggle()"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <i class="fa-solid fa-bars"></i>
-      </button>
-
-      <!-- Collapsible wrapper -->
-      <div
-        class="collapse navbar-collapse"
-        id="navbarSupportedContent"
-        mdbCollapse
-        #basicNavbar="mdbCollapse"
-      >
-        <!-- Left links -->
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="">Home</a>
-          </li>
-<!--          <li class="nav-item">-->
-<!--            <a class="nav-link" href="#">Link</a>-->
-<!--          </li>-->
-<!--          <li class="nav-item">-->
-<!--            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"-->
-<!--            >Disabled</a-->
-<!--            >-->
-<!--          </li>-->
-        </ul>
-        <!-- Left links -->
-
-        <!-- Right links -->
-        <ul class = "navbar-nav mb2 mb-lg-0">
-          <li class = "nav-item">
-            <a class = "nav-link active" aria-current="page" href="">
-              <i class="fab fa-linkedin"></i>
-            </a>
-          </li>
-          <li class = "nav-item">
-            <a class = "nav-link active" aria-current="page" href="">
-              <i class="fab fa-github"></i>            </a>
-          </li>
-        </ul>
-        <!--        Right links-->
-      </div>
-      <!-- Collapsible wrapper -->
-    </div>
-    <!-- Container wrapper -->
-  </nav>
-  <!-- Navbar -->
-
-<!--  Title-->
-  <h1 class = "text-center page-title">Resume</h1>
-<!--  Title-->
+  <app-navbar></app-navbar>
 </header>
 
 <main>
+  <!--  Title-->
+  <h1 class = "text-center page-title">Resume</h1>
+  <!--  Title-->
+
+  <div class="container resume-content">
+    <div class="row">
+      <div class="col-md-8">
+        <div class = "education">
+          <h2>BA CS</h2>
+          <p>Central College 2023</p>
+          <h2>AA Human & Social Science</h2>
+          <p>SUNY Jefferson 2013?</p>
+        </div>
+        <hr class = "hr"/>
+        <div class = "experience">
+          <h2>Job 1</h2>
+          <h4>Stuff</h4>
+          <p>specifics</p>
+          <h2>Job 2</h2>
+          <h4>Stuff</h4>
+          <p>specifics</p>
+        </div>
+        <hr class = "hr" />
+        <div class = "volunteer">
+          <h2>PBJJ</h2>
+          <h4>Instructor, CTO | 2021 - present</h4>
+          <p>stuff</p>
+          <h2>SD Computers 2 Kids</h2>
+          <h4>Refurbishment Assistant</h4>
+          <p>stuff</p>
+        </div>      </div>
+      <div class="col-md-4 skills">
+        <h4>download resume here!</h4>
+        <hr class = "hr" />
+        <br>
+        <h2 class = "text-center skills-title">Skills</h2>
+      </div>
+    </div>
+  </div>
 
 </main>
 
