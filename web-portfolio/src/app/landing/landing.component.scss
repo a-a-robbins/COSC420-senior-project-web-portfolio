@@ -10,6 +10,15 @@
   max-width: 100%;
   height: auto;
   margin: .5rem;
+  animation-name: cart;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+
+  @keyframes cart {
+    0%   {right:0px; top:0px;}
+    25%  {right:200px; top:0px;}
+  }
 }
 
 //responsive buttons
@@ -228,6 +237,7 @@
 .flavor {
   background-color: hotpink;
   color: lightcyan;
+  border: white 5px solid;
   cursor: pointer;
   padding: 1.25%;
   margin: 1%;
