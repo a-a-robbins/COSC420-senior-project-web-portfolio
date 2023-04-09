@@ -2,17 +2,18 @@ main {
   background-color: darkslateblue;
 }
 
-h4 {
-  color: lightgrey;
+ul {
+  color: white;
+  padding: 1rem;
 }
 
 .skills {
-  border: lightgrey solid 2px;
+  border: papayawhip solid 2px;
   @media screen and (max-width: 768px) {
     border: none;
   }
 }
 
 .hr {
-  border: lightgrey solid 1px;
+  border: papayawhip solid 1px;
 }
