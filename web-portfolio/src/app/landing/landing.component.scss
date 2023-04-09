@@ -15,10 +15,19 @@
   animation-timing-function: linear;
   animation-iteration-count: 1;
 
-  @keyframes cart {
-    0%   {right:0px; top:0px;}
-    25%  {right:200px; top:0px;}
-  }
+}
+@keyframes cart {
+  from {right: -500px; top: 0px}
+  to {right: 0; top: 0px}
+}
+
+/* The element to apply the animation to */
+.ice-cream-cart {
+  position: relative;
+  animation-name: cart;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  //animation-direction: alternate;
 }
 
 //responsive buttons
