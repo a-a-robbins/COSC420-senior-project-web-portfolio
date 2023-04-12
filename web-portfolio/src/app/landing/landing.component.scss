@@ -23,6 +23,7 @@
   animation-name: cart;
   animation-duration: 4s;
   animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 @keyframes buttons {
@@ -53,6 +54,7 @@
   animation-name: buttons;
   animation-duration: 5s;
   animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 #btn-resume-xs {
@@ -91,6 +93,7 @@
   animation-name: buttons;
   animation-duration: 5s;
   animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 #btn-resume-sm {
@@ -129,6 +132,8 @@
   animation-name: buttons;
   animation-duration: 5s;
   animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
 }
 
 #btn-resume-md {
@@ -167,6 +172,8 @@
   animation-name: buttons;
   animation-duration: 5s;
   animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
 }
 
 #btn-resume-lg {
@@ -205,6 +212,8 @@
   animation-name: buttons;
   animation-duration: 5s;
   animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
 }
 
 #btn-resume-xl {
@@ -243,6 +252,8 @@
   animation-name: buttons;
   animation-duration: 5s;
   animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
 }
 
 #btn-resume-xxl {
