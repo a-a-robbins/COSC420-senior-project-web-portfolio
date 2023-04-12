@@ -1,8 +1,7 @@
 .map-background {
-  position: relative;
-  z-index: 3;
-  width: 1920px;
-  height: 1080px;
+  width: 100vw;
+  height: 100vh;
+  margin-bottom: 5rem;
   background-color: darkgreen;
 }
 
@@ -11,13 +10,13 @@
   z-index: 5;
   left: 50%;
   top: 50%;
-  transform: translate(500%, 500%);
+  transform: translate(50%, 50%);
 }
 
 /* The animation code */
 @keyframes sprite {
   from {left: 50%; top: 50%}
-  to {left: -375px; top: 350px}
+  to {left: -60vmin; top: 50vmin}
 }
 
 /* The element to apply the animation to */
@@ -28,29 +27,29 @@
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 
-  width: 100px;
-  height: 100px;
+  width: 10vmin;
+  height: 10vmin;
   //margin-left: auto;
   //margin-right: auto;
 }
 
 .click-target {
   background-color: yellow;
-  width: 100px;
-  height: 100px;
+  width: 10vmin;
+  height: 10vmin;
   position: absolute;
   z-index: 1;
-  top: 900px;
-  left: 100px;
+  top: 100vh;
+  left: 15vw;
   border-radius: 50%;
 }
 
 .palm-image {
   position: absolute;
   z-index: 2;
-  width: 100px;
-  height: 200px;
+  width: 10vmin;
+  height: 20vmin;
   bottom: 0;
-  left: -50px;
+  left: -5vmin;
 }
 
