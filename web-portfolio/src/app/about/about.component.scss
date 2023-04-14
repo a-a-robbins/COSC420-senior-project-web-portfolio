@@ -2,7 +2,8 @@
   width: 100vw;
   height: 100vh;
   margin-bottom: 5rem;
-  background-color: darkgreen;
+  background-color: papayawhip;
+  border-radius: 2%;
 }
 
 .sprite {
@@ -34,7 +35,7 @@
 }
 
 .palm-target {
-  background-color: yellow;
+  background-color: lightskyblue;
   width: 10vmin;
   height: 10vmin;
   position: absolute;
@@ -53,7 +54,47 @@
   left: -5vmin;
 }
 
+.mountain-target {
+  background-color: lightskyblue;
+  width: 10vmin;
+  height: 10vmin;
+  position: absolute;
+  z-index: 1;
+  top: 25vh;
+  left: 15vw;
+  border-radius: 50%;
+}
 
+.mountain-image {
+  position: absolute;
+  z-index: 2;
+  width:20vmin;
+  height: 20vmin;
+  top: -5vmin;
+  left: -15vmin;
+}
+
+.corn-target {
+  background-color: lightskyblue;
+  width: 10vmin;
+  height: 10vmin;
+  position: absolute;
+  z-index: 1;
+  top: 40vh;
+  left: 75vw;
+  border-radius: 50%;
+}
+
+.corn-image {
+  position: absolute;
+  z-index: 2;
+  width:10vmin;
+  height: 20vmin;
+  top: -11vmin;
+  left: -7vmin;
+}
+
+//stack overflow example
 @-webkit-keyframes cssAnimation {
   from {
     -webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(100px);
@@ -69,6 +110,10 @@
   animation-iteration-count: 1;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
+}
+
+.example {
+  background-color: lightskyblue;
 }
 
 
