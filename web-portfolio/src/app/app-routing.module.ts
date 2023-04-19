@@ -39,7 +39,8 @@ const routes: Routes = [
   {path: 'creative-collection/musings', component: MusingsComponent},
   {path: 'creative-collection/visual-art', component: VisualArtComponent},
   {path: 'about', component: AboutComponent},
-  {path: 'ani-test', component: AniTestComponent}
+  {path: 'ani-test', component: AniTestComponent},
+  {path: '**', component: LandingComponent }
 ];
 
 @NgModule({
