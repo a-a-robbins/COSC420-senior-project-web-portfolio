@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { AppModule } from "./app.module";
 import { RouterModule, Routes } from '@angular/router';
 import {AniTestComponent} from "./ani-test/ani-test.component";
 import {LandingComponent} from "./landing/landing.component";
