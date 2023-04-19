@@ -1,0 +1,16 @@
+.grow {
+  animation-name: cssAnimation;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes cssAnimation {
+  from {
+    transform: rotate(0deg) scale(1) skew(0deg) translate(100px);
+  }
+  to {
+    transform: rotate(0deg) scale(2) skew(0deg) translate(100px);
+  }
+}

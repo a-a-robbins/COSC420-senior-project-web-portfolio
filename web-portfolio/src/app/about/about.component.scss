@@ -1,16 +1,135 @@
+.map-background {
+  width: 100vw;
+  height: 100vh;
+  margin-bottom: 5rem;
+  background-color: papayawhip;
+  border-radius: 2%;
+}
+
+.sprite {
+  position: absolute;
+  z-index: 5;
+  left: 50%;
+  top: 50%;
+  transform: translate(50%, 50%);
+}
+
 /* The animation code */
-@keyframes sprite {
-  from {left: 0px; top: 0px}
-  to {left: 200px; top: 200px}
+@keyframes palm-move {
+  from {left: 50%; top: 50%}
+  to {left: -60vmin; top: 50vmin}
+}
+
+@keyframes corn-move {
+  from {left: 50%; top: 50%}
+  to {left: 0; top: 0}
 }
 
 /* The element to apply the animation to */
-img {
-  position: relative;
-  animation-name: sprite;
+.sprite-image {
+  position: absolute;
+  animation-name: palm-move;
   animation-duration: 4s;
   animation-iteration-count: 1;
-  //animation-direction: alternate;
+  animation-fill-mode: forwards;
+
+  width: 10vmin;
+  height: 10vmin;
+  //margin-left: auto;
+  //margin-right: auto;
+}
+
+//.palm-button:active {
+//  position: absolute;
+//  animation-name: palm-move;
+//  animation-duration: 4s;
+//  animation-iteration-count: 1;
+//  animation-fill-mode: forwards;
+//
+//  width: 10vmin;
+//  height: 10vmin;
+//}
+
+.palm-target {
+  background-color: lightskyblue;
+  width: 10vmin;
+  height: 10vmin;
+  position: absolute;
+  z-index: 1;
+  top: 100vh;
+  left: 15vw;
+  border-radius: 50%;
+}
+
+.palm-image {
+  position: absolute;
+  z-index: 2;
+  width: 10vmin;
+  height: 20vmin;
+  bottom: 0;
+  left: -5vmin;
+}
+
+.mountain-target {
+  background-color: lightskyblue;
+  width: 10vmin;
+  height: 10vmin;
+  position: absolute;
+  z-index: 1;
+  top: 25vh;
+  left: 15vw;
+  border-radius: 50%;
+}
+
+.mountain-image {
+  position: absolute;
+  z-index: 2;
+  width:20vmin;
+  height: 20vmin;
+  top: -5vmin;
+  left: -15vmin;
+}
+
+.corn-target {
+  background-color: lightskyblue;
+  width: 10vmin;
+  height: 10vmin;
+  position: absolute;
+  z-index: 1;
+  top: 40vh;
+  left: 75vw;
+  border-radius: 50%;
+}
+
+.corn-image {
+  position: absolute;
+  z-index: 2;
+  width:10vmin;
+  height: 20vmin;
+  top: -11vmin;
+  left: -7vmin;
+}
+
+//stack overflow example
+@keyframes cssAnimation {
+  from {
+    transform: rotate(0deg) scale(1) skew(0deg) translate(100px);
+  }
+  to {
+   transform: rotate(0deg) scale(2) skew(0deg) translate(100px);
+  }
+}
+
+.classname {
+  animation-name: cssAnimation;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+.example {
+  background-color: lightskyblue;
 }
 
 

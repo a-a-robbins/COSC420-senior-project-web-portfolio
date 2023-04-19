@@ -10,15 +10,12 @@
   max-width: 100%;
   height: auto;
   margin: .5rem;
-  animation-name: cart;
-  animation-duration: 5s;
-  animation-timing-function: linear;
-  animation-iteration-count: 1;
 
 }
+
 @keyframes cart {
   from {right: -500px; top: 0px}
-  to {right: 0; top: 0px}
+  to {right: 0px; top: 0px}
 }
 
 /* The element to apply the animation to */
@@ -27,7 +24,25 @@
   animation-name: cart;
   animation-duration: 4s;
   animation-iteration-count: 1;
-  //animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+
+@keyframes buttons {
+  0% {
+    opacity: 0%;}
+  25% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 0%;
+  }
+  75% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+
 }
 
 //responsive buttons
@@ -37,6 +52,10 @@
   text-align: center;
   width: 3rem;
   height: 3rem;
+  animation-name: buttons;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 #btn-resume-xs {
@@ -72,6 +91,10 @@
   font-size: 10px;
   width: 4rem;
   height: 4rem;
+  animation-name: buttons;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 #btn-resume-sm {
@@ -107,6 +130,11 @@
   font-size: 12px;
   width: 5rem;
   height: 5rem;
+  animation-name: buttons;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
 }
 
 #btn-resume-md {
@@ -142,6 +170,11 @@
   font-size: 14px;
   width: 6rem;
   height: 6rem;
+  animation-name: buttons;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
 }
 
 #btn-resume-lg {
@@ -177,6 +210,11 @@
   font-size: 16px;
   width: 7rem;
   height: 7rem;
+  animation-name: buttons;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
 }
 
 #btn-resume-xl {
@@ -212,6 +250,11 @@
   font-size: 18px;
   width: 8rem;
   height: 8rem;
+  animation-name: buttons;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
 }
 
 #btn-resume-xxl {

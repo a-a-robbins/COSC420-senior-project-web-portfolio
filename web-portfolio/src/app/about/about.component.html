@@ -1,10 +1,38 @@
-<header>
-  <app-navbar></app-navbar>
-</header>
 
 <main>
   <h1 class = "text-center page-title">About Me</h1>
+  <div class = "container map-background">
+    <div class = "background-color"></div>
 
-  <img src = "../../assets/images/sprites/walk2.png">
+    <div class = "sprite">
+      <img id = "sprite" class = "sprite-image" src = "../../assets/images/about/adventure-girl.png">
+    </div>
+
+    <button type = "button" class = "palm-button" (click) = "palmAnimation()">
+      <div class = "palm-target" name="" type="button" onclick="ani()" value="Click">
+        <img class = "palm-image" src = "../../assets/images/about/palm-tree.png">
+      </div>
+    </button>
+
+
+    <div class = "mountain-target">
+      <img class = "mountain-image" src = "../../assets/images/about/mountain-transparent-23.png">
+    </div>
+
+    <button type = "button" class = "corn-button" (click) = "cornAnimation()">
+      <div class = "corn-target">
+        <img class = "corn-image" src = "../../assets/images/about/corn-stalk-clipart-md.png">
+      </div>
+    </button>
+
+
+  </div>
+
+  <div class = "example">
+    <button type = "button" class = "example" (click)="ani()">Animate</button>
+    <img id="img" src="https://i.stack.imgur.com/vghKS.png" width="328" height="328" />
+    <p>an example (not working) from stack overflow, link: <a href = "https://stackoverflow.com/questions/4847996/css-animation-onclick">CSS Animation onClick</a></p>
+  </div>
+
 
 </main>
