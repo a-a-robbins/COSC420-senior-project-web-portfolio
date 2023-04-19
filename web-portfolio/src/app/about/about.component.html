@@ -8,25 +8,31 @@
     <div class = "background-color"></div>
 
     <div class = "sprite">
-      <img class = "sprite-image" src = "../../assets/images/about/adventure-girl.png">
+      <img id = "sprite" class = "sprite-image" src = "../../assets/images/about/adventure-girl.png">
     </div>
 
-    <div class = "palm-target" name="" type="button" onclick="ani()" value="Click">
-      <img class = "palm-image" src = "../../assets/images/about/palm-tree.png">
-    </div>
+    <button type = "button" class = "palm-button" (click) = "palmAnimation()">
+      <div class = "palm-target" name="" type="button" onclick="ani()" value="Click">
+        <img class = "palm-image" src = "../../assets/images/about/palm-tree.png">
+      </div>
+    </button>
+
 
     <div class = "mountain-target">
       <img class = "mountain-image" src = "../../assets/images/about/mountain-transparent-23.png">
     </div>
 
-    <div class = "corn-target">
-      <img class = "corn-image" src = "../../assets/images/about/corn-stalk-clipart-md.png">
-    </div>
+    <button type = "button" class = "corn-button" (click) = "cornAnimation()">
+      <div class = "corn-target">
+        <img class = "corn-image" src = "../../assets/images/about/corn-stalk-clipart-md.png">
+      </div>
+    </button>
+
 
   </div>
 
   <div class = "example">
-    <input name="" type="button" onclick="ani()" value="Click">
+    <button type = "button" class = "example" (click)="ani()">Animate</button>
     <img id="img" src="https://i.stack.imgur.com/vghKS.png" width="328" height="328" />
     <p>an example (not working) from stack overflow, link: <a href = "https://stackoverflow.com/questions/4847996/css-animation-onclick">CSS Animation onClick</a></p>
   </div>

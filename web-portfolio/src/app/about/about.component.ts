@@ -15,6 +15,20 @@ export class AboutComponent {
     }
   }
 
+  palmAnimation() {
+    var element = document.getElementById('sprite');
+    if (element !== null) {
+      element.className = 'sprite-image';
+    }
+  }
+
+  cornAnimation() {
+    var element = document.getElementById('sprite');
+    if (element !== null) {
+      element.className = 'sprite-image'
+    }
+  }
+
   constructor() {}
 }
 

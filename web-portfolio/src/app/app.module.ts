@@ -29,6 +29,7 @@ import { PhotojournalComponent } from './creative-collection/photojournal/photoj
 import { MusingsComponent } from './creative-collection/musings/musings.component';
 import { VisualArtComponent } from './creative-collection/visual-art/visual-art.component';
 import { AboutComponent } from './about/about.component';
+import { AniTestComponent } from './ani-test/ani-test.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { AboutComponent } from './about/about.component';
     PhotojournalComponent,
     MusingsComponent,
     VisualArtComponent,
-    AboutComponent
+    AboutComponent,
+    AniTestComponent
   ],
   imports: [
     BrowserModule,
