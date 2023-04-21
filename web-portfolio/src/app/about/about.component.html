@@ -1,38 +1,44 @@
+<header>
+  <h1 class = "text-center page-title">About Me</h1>
+</header>
 
 <main>
-  <h1 class = "text-center page-title">About Me</h1>
-  <div class = "container map-background">
-    <div class = "background-color"></div>
 
-    <div class = "sprite">
-      <img id = "sprite" class = "sprite-image" src = "../../assets/images/about/adventure-girl.png">
+  <div class = "container map-background" id = "map-background">
+    <div class = "background-color"></div>
+    <div class = "palm-path-vertical"></div>
+    <div class = "palm-path-horizontal"></div>
+    <div class = "mountain-path-vertical"></div>
+    <div class = "mountain-path-horizontal"></div>
+    <div class = "corn-path-vertical"></div>
+    <div class = "corn-path-horizontal">
+<!--      <canvas id = "myCanvas" (load)="bezierCurve()"></canvas>-->
     </div>
 
-    <button type = "button" class = "palm-button" (click) = "palmAnimation()">
-      <div class = "palm-target" name="" type="button" onclick="ani()" value="Click">
+    <div class = "sprite" id = "sprite">
+      <img class = "sprite-image" src = "../../assets/images/about/adventure-girl.png">
+    </div>
+
+    <div class = "star">
+      <img class = "star-image" src = "../../assets/images/about/star.png">
+    </div>
+
+      <div class = "palm-target">
+        <button type = "button" class = "palm-button" (click) = "palmAnimation()"></button>
         <img class = "palm-image" src = "../../assets/images/about/palm-tree.png">
       </div>
-    </button>
 
 
     <div class = "mountain-target">
+      <button type = "button" class = "mountain-button" (click)= "mountainAnimation()"></button>
       <img class = "mountain-image" src = "../../assets/images/about/mountain-transparent-23.png">
     </div>
 
-    <button type = "button" class = "corn-button" (click) = "cornAnimation()">
-      <div class = "corn-target">
-        <img class = "corn-image" src = "../../assets/images/about/corn-stalk-clipart-md.png">
-      </div>
-    </button>
-
+    <div class = "corn-target">
+      <button type = "button" class = "corn-button" (click) = "cornAnimation()"></button>
+      <img class = "corn-image" src = "../../assets/images/about/corn-stalk-clipart-md.png">
+    </div>
 
   </div>
-
-  <div class = "example">
-    <button type = "button" class = "example" (click)="ani()">Animate</button>
-    <img id="img" src="https://i.stack.imgur.com/vghKS.png" width="328" height="328" />
-    <p>an example (not working) from stack overflow, link: <a href = "https://stackoverflow.com/questions/4847996/css-animation-onclick">CSS Animation onClick</a></p>
-  </div>
-
 
 </main>

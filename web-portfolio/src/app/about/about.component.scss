@@ -1,9 +1,15 @@
+canvas {
+  border: 1px solid white;
+}
 .map-background {
+  position: relative;
   width: 100vw;
   height: 100vh;
   margin-bottom: 5rem;
   background-color: papayawhip;
   border-radius: 2%;
+  //border-style: wave;
+  //border-width: 5rem;
 }
 
 .sprite {
@@ -14,122 +20,195 @@
   transform: translate(50%, 50%);
 }
 
-/* The animation code */
-@keyframes palm-move {
-  from {left: 50%; top: 50%}
-  to {left: -60vmin; top: 50vmin}
-}
-
-@keyframes corn-move {
-  from {left: 50%; top: 50%}
-  to {left: 0; top: 0}
-}
-
-/* The element to apply the animation to */
 .sprite-image {
-  position: absolute;
-  animation-name: palm-move;
-  animation-duration: 4s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-
   width: 10vmin;
   height: 10vmin;
-  //margin-left: auto;
-  //margin-right: auto;
 }
 
-//.palm-button:active {
-//  position: absolute;
-//  animation-name: palm-move;
-//  animation-duration: 4s;
-//  animation-iteration-count: 1;
-//  animation-fill-mode: forwards;
-//
-//  width: 10vmin;
-//  height: 10vmin;
-//}
+.star {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(50%, 50%);
+}
+
+.star-image {
+  position: absolute;
+  width: 20vmin;
+  height: 20vmin;
+
+}
 
 .palm-target {
-  background-color: lightskyblue;
-  width: 10vmin;
-  height: 10vmin;
   position: absolute;
-  z-index: 1;
-  top: 100vh;
-  left: 15vw;
-  border-radius: 50%;
+  top: 80%;
+  left: 5%;
+
+  .palm-button {
+    position: absolute;
+    background-color: lightskyblue;
+    width: 10vmin;
+    height: 10vmin;
+    z-index: 1;
+    border-radius: 50%;
+  }
+
+  .palm-image {
+    position: absolute;
+    z-index: 2;
+    width: 10vmin;
+    height: 20vmin;
+    top: -10vmin;
+    left: -5vmin;
+  }
 }
 
-.palm-image {
-  position: absolute;
-  z-index: 2;
-  width: 10vmin;
-  height: 20vmin;
-  bottom: 0;
-  left: -5vmin;
-}
 
 .mountain-target {
-  background-color: lightskyblue;
-  width: 10vmin;
-  height: 10vmin;
   position: absolute;
-  z-index: 1;
-  top: 25vh;
-  left: 15vw;
-  border-radius: 50%;
+  top: 5%;
+  left: 10%;
+
+  .mountain-button {
+    position: absolute;
+    background-color: lightskyblue;
+    width: 10vmin;
+    height: 10vmin;
+    z-index: 1;
+    border-radius: 50%;
+  }
+
+  .mountain-image {
+    position: absolute;
+    z-index: 2;
+    width:20vmin;
+    height: 20vmin;
+    top: -5vmin;
+    left: -15vmin;
+  }
+
 }
 
-.mountain-image {
-  position: absolute;
-  z-index: 2;
-  width:20vmin;
-  height: 20vmin;
-  top: -5vmin;
-  left: -15vmin;
-}
 
 .corn-target {
-  background-color: lightskyblue;
-  width: 10vmin;
-  height: 10vmin;
+  position: absolute;
+  top: 40%;
+  left: 85%;
+
+  .corn-button {
+    position: absolute;
+    background-color: lightskyblue;
+    width: 10vmin;
+    height: 10vmin;
+    z-index: 1;
+    border-radius: 50%;
+  }
+
+  .corn-image {
+    position: absolute;
+    z-index: 2;
+    width:10vmin;
+    height: 20vmin;
+    top: -11vmin;
+    left: -7vmin;
+  }
+
+}
+
+
+.palm-path-vertical {
   position: absolute;
   z-index: 1;
-  top: 40vh;
-  left: 75vw;
-  border-radius: 50%;
+  width: 28%;
+  height: 5%;
+  background-color: #633f0a;
+  top: 74%;
+  left: 30%;
+  transform: rotate(-35deg);
+  border-radius: 10%;
+  border-style: ridge;
+  border-color: saddlebrown;
+  border-width: 5px;
 }
 
-.corn-image {
+.palm-path-horizontal {
   position: absolute;
-  z-index: 2;
-  width:10vmin;
-  height: 20vmin;
-  top: -11vmin;
-  left: -7vmin;
+  z-index: 1;
+  width: 25%;
+  height: 5%;
+  background-color: #633f0a;
+  top: 85%;
+  left: 8.5%;
+  border-radius: 10%;
+  border-style: ridge;
+  border-color: saddlebrown;
+  border-width: 5px;
+  border-right: none;
 }
 
-//stack overflow example
-@keyframes cssAnimation {
-  from {
-    transform: rotate(0deg) scale(1) skew(0deg) translate(100px);
-  }
-  to {
-   transform: rotate(0deg) scale(2) skew(0deg) translate(100px);
-  }
+.mountain-path-vertical {
+  position: absolute;
+  z-index: 1;
+  width: 50%;
+  height: 5%;
+  background-color: #633f0a;
+  top: 38%;
+  left: 8.75%;
+  transform: rotate(35deg);
+  border-radius: 10%;
+  border-style: ridge;
+  border-color: saddlebrown;
+  border-width: 5px;
+  border-right: none;
 }
 
-.classname {
-  animation-name: cssAnimation;
-  animation-duration: 3s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease;
-  animation-fill-mode: forwards;
+.mountain-path-horizontal {
+  position: absolute;
+  z-index: 1;
+  width: 5%;
+  height: 5%;
+  background-color: #633f0a;
+  top: 15%;
+  left: 11%;
+  transform: rotate(90deg);
+  border-radius: 22.75%;
+  border-style: ridge;
+  border-color: saddlebrown;
+  border-width: 5px;
+  border-right: none;
 }
 
-.example {
-  background-color: lightskyblue;
+.corn-path-vertical {
+  position: absolute;
+  z-index: 1;
+  width: 15%;
+  height: 5%;
+  background-color: #633f0a;
+  top: 53%;
+  left: 57%;
+  transform: rotate(-35deg);
+  border-radius: 10%;
+  border-style: ridge;
+  border-color: saddlebrown;
+  border-width: 5px;
+  border-right: none;
+}
+
+.corn-path-horizontal {
+  position: absolute;
+  z-index: 1;
+  width: 20%;
+  height: 5%;
+  background-color: #633f0a;
+  top: 46%;
+  left: 69%;
+  transform: rotate(-5deg);
+  border-radius: 22.75%;
+  border-style: ridge;
+  border-color: saddlebrown;
+  border-width: 5px;
+  border-left: none;
 }
 
 
