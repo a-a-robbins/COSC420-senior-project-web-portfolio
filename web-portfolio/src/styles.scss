@@ -6,7 +6,7 @@ body {
   //background-color: darkslateblue;
   //background-image: linear-gradient(to right, darkslateblue , hotpink);
   background-image: radial-gradient(hotpink, darkslateblue);
-
+  z-index: -1;
 }
 
 h1, h2, h3, h4, p {
