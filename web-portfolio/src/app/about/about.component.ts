@@ -11,6 +11,7 @@ import {ModalComponent} from "../modal/modal.component";
 
 export class AboutComponent {
 
+
   modalRef: MdbModalRef<ModalComponent> | null = null;
 
   constructor(private modalService: MdbModalService) {}
@@ -77,6 +78,7 @@ export class AboutComponent {
     let posLeft = 50;
     clearInterval(id);
     id = setInterval(frame, 50);
+
 
     function frame() {
       if (posTop != 0 && posLeft != 7) {

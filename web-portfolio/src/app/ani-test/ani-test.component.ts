@@ -46,6 +46,7 @@ export class AniTestComponent {
     }
   }
 
+
   modalRef: MdbModalRef<ModalComponent> | null = null;
 
   constructor(private modalService: MdbModalService) {}
@@ -53,5 +54,6 @@ export class AniTestComponent {
   openModal() {
     this.modalRef = this.modalService.open(ModalComponent)
   }
+
 }
 
