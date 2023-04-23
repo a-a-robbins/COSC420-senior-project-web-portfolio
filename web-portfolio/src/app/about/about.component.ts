@@ -21,6 +21,15 @@ export class AboutComponent {
   palmAnimation() {
     let id: any = null;
     const elem = document.getElementById("sprite");
+    const palmMessage = document.getElementById("palm-message");
+    const mountainMessage = document.getElementById("mountain-message");
+      if(mountainMessage && mountainMessage.style.display == "block") {
+        mountainMessage.style.display = "none";
+      }
+    const cornMessage = document.getElementById("corn-message");
+    if(cornMessage && cornMessage.style.display == "block") {
+      cornMessage.style.display = "none";
+    }
     let posTop = 50;
     let posLeft = 50;
     clearInterval(id);
@@ -45,14 +54,25 @@ export class AboutComponent {
         // self.openModal();
       } else {
         clearInterval(id);
-        self.openModal();
+        if(palmMessage) {
+          palmMessage.style.display = "block";
         }
+      }
     }
   }
 
   mountainAnimation() {
     let id: any = null;
     const elem = document.getElementById("sprite");
+    const mountainMessage = document.getElementById("mountain-message");
+    const palmMessage = document.getElementById("palm-message");
+      if(palmMessage && palmMessage.style.display == "block") {
+        palmMessage.style.display = "none";
+      }
+    const cornMessage = document.getElementById("corn-message");
+    if(cornMessage && cornMessage.style.display == "block") {
+      cornMessage.style.display = "none";
+    }
     let posTop = 50;
     let posLeft = 50;
     clearInterval(id);
@@ -72,6 +92,9 @@ export class AboutComponent {
         elem.style.left = posLeft + "%";
       } else {
         clearInterval(id);
+        if(mountainMessage) {
+          mountainMessage.style.display = "block";
+        }
       }
     }
   }
@@ -79,6 +102,15 @@ export class AboutComponent {
   cornAnimation() {
     let id: any = null;
     const elem = document.getElementById("sprite");
+    const cornMessage = document.getElementById("corn-message");
+    const palmMessage = document.getElementById("palm-message");
+    if(palmMessage && palmMessage.style.display == "block") {
+      palmMessage.style.display = "none";
+    }
+    const mountainMessage = document.getElementById("mountain-message");
+    if(mountainMessage && mountainMessage.style.display == "block") {
+      mountainMessage.style.display = "none";
+    }
     let posTop = 50;
     let posLeft = 50;
     clearInterval(id);
@@ -98,6 +130,9 @@ export class AboutComponent {
         elem.style.left = posLeft + "%";
       } else {
         clearInterval(id);
+        if(cornMessage) {
+          cornMessage.style.display = "block";
+        }
       }
     }
   }
