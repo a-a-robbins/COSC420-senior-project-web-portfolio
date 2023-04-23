@@ -2,18 +2,30 @@ main {
   background-color: darkslateblue;
 }
 
+h2 {
+  color: lightcyan;
+}
+
+h4 {
+  color: hotpink;
+}
+
+p {
+  color: ivory;
+}
+
 ul {
-  color: white;
+  color: ivory;
   padding: 1rem;
 }
 
 .skills {
-  border: papayawhip solid 2px;
+  border: lightcyan solid 2px;
   @media screen and (max-width: 768px) {
     border: none;
   }
 }
 
 .hr {
-  border: papayawhip solid 1px;
+  border: lightcyan solid 1px;
 }
