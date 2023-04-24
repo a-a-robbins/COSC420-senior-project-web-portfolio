@@ -24,7 +24,7 @@
       #basicNavbar="mdbCollapse"
     >
       <!-- Left links -->
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 collapse navbar-collapse">
         <li class="nav-item">
             <a  class="nav-link"
                 routerLink="/about"
@@ -39,14 +39,40 @@
             Code Projects
           </a>
         </li>
-        <li class="nav-item">
-          <a  class="nav-link"
-              routerLink="/creative-collection"
-              routerLinkActive="activebutton">
-          Creative Collection
-          </a
-          >
-        </li>
+          <!-- Dropdown -->
+          <li mdbDropdown class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              routerLink = "/creative-collection"
+              routerLinkActive="activebutton"
+              id="navbarDropdownMenuLink"
+              role="button"
+              mdbDropdownToggle
+              aria-expanded="false"
+            >
+              Creative Collection
+            </a>
+            <ul mdbDropdownMenu class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li>
+                <a  class="dropdown-item"
+                    routerLink = "/creative-collection/photojournal">
+                  Photojournal
+                </a>
+              </li>
+              <li>
+                <a  class="dropdown-item"
+                    routerLink = "/creative-collection/musings">
+                  Musings
+                </a>
+              </li>
+              <li>
+                <a  class="dropdown-item"
+                    routerLink = "/creative-collection/visual-art">
+                  Visual Art
+                </a>
+              </li>
+            </ul>
+          </li>
         <li class="nav-item">
           <a  class="nav-link"
               routerLink="/resume"
@@ -77,3 +103,4 @@
   <!-- Container wrapper -->
 </nav>
 <!-- Navbar -->
+
