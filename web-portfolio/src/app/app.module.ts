@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {RouterModule} from "@angular/router";
 import { ModalComponent } from './modal/modal.component';
+import { DownloaderComponent } from './downloader/downloader.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ModalComponent
+    ModalComponent,
+    DownloaderComponent
   ],
   imports: [
     BrowserModule,
