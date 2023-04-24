@@ -124,9 +124,9 @@
   left: 30%;
   transform: rotate(-35deg);
   border-radius: 10%;
-  border-style: ridge;
-  border-color: saddlebrown;
-  border-width: 5px;
+  //border-style: ridge;
+  //border-color: saddlebrown;
+  //border-width: 5px;
 }
 
 .palm-path-horizontal {
@@ -138,10 +138,10 @@
   top: 85%;
   left: 8.5%;
   border-radius: 10%;
-  border-style: ridge;
-  border-color: saddlebrown;
-  border-width: 5px;
-  border-right: none;
+  //border-style: ridge;
+  //border-color: saddlebrown;
+  //border-width: 5px;
+  //border-right: none;
 }
 
 .mountain-path-vertical {
@@ -159,6 +159,7 @@
   border-width: 5px;
   border-right: none;
   border-left: none;
+
 }
 
 .mountain-path-horizontal {
