@@ -21,6 +21,11 @@ ul {
 
 .skills {
   border: lightcyan solid 2px;
+
+  ul > li {
+    padding-bottom: 10%;
+  }
+
   @media screen and (max-width: 768px) {
     border: none;
   }
@@ -28,4 +33,11 @@ ul {
 
 .hr {
   border: lightcyan solid 1px;
+}
+
+.downloader {
+  padding-top: 2%;
+  a, .download-icon {
+    color: hotpink;
+  }
 }
