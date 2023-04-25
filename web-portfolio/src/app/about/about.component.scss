@@ -114,35 +114,35 @@
 
 }
 
-//.palm-path-vertical {
-//  position: absolute;
-//  z-index: 1;
-//  width: 28%;
-//  height: 5%;
-//  background-color: #633f0a;
-//  top: 74%;
-//  left: 30%;
-//  transform: rotate(-35deg);
-//  border-radius: 10%;
-//  //border-style: ridge;
-//  //border-color: saddlebrown;
-//  //border-width: 5px;
-//}
-//
-//.palm-path-horizontal {
-//  position: absolute;
-//  z-index: 1;
-//  width: 25%;
-//  height: 5%;
-//  background-color: #633f0a;
-//  top: 85%;
-//  left: 8.5%;
-//  border-radius: 10%;
-//  //border-style: ridge;
-//  //border-color: saddlebrown;
-//  //border-width: 5px;
-//  //border-right: none;
-//}
+.palm-path-vertical {
+  position: absolute;
+  z-index: 1;
+  width: 28%;
+  height: 5%;
+  background-color: #633f0a;
+  top: 74%;
+  left: 30%;
+  transform: rotate(-35deg);
+  border-radius: 10%;
+  border-style: ridge;
+  border-color: saddlebrown;
+  border-width: 5px;
+}
+
+.palm-path-horizontal {
+  position: absolute;
+  z-index: 1;
+  width: 25%;
+  height: 5%;
+  background-color: #633f0a;
+  top: 85%;
+  left: 8.5%;
+  border-radius: 10%;
+  border-style: ridge;
+  border-color: saddlebrown;
+  border-width: 5px;
+  border-right: none;
+}
 
 .mountain-path-vertical {
   position: absolute;
@@ -311,15 +311,15 @@
 }
 
 
-.palm-path-curve {
-  position: absolute;
-  width: 60%;
-  height: 200px;
-  top: 55%;
-  left: 0%;
-  transform: rotate(-25deg);
-  border: solid 40px #000;
-  border-color: transparent transparent #633f0a transparent;
-  border-radius: 0 0 0 30%/100px;
-}
+//.palm-path-curve {
+//  position: absolute;
+//  width: 60%;
+//  height: 200px;
+//  top: 55%;
+//  left: 0%;
+//  transform: rotate(-25deg);
+//  border: solid 40px #000;
+//  border-color: transparent transparent #633f0a transparent;
+//  border-radius: 0 0 0 30%/100px;
+//}
 
