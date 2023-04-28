@@ -34,7 +34,14 @@ const routes: Routes = [
   {path: 'landing', component: LandingComponent},
   {path: 'resume', component: ResumeComponent},
   {path: 'code-projects', component: CodeProjectsComponent},
-  {path: 'creative-collection', component: CreativeCollectionComponent},
+  {path: 'creative-collection', component: CreativeCollectionComponent,
+    // children: [
+    //    note the different paths = the ways I've experimented with so far
+    //   { path: 'photojournal', component: PhotojournalComponent },
+    //   { path: './musings', component: MusingsComponent },
+    //   { path: '/visual-art', component: VisualArtComponent }
+    // ]
+  },
   {path: 'creative-collection/photojournal', component: PhotojournalComponent},
   {path: 'creative-collection/musings', component: MusingsComponent},
   {path: 'creative-collection/visual-art', component: VisualArtComponent},

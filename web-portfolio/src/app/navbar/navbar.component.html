@@ -24,62 +24,66 @@
       #basicNavbar="mdbCollapse"
     >
       <!-- Left links -->
+
+
       <ul class="navbar-nav me-auto mb-2 mb-lg-0 collapse navbar-collapse">
-        <li class="nav-item">
-            <a  class="nav-link"
-                routerLink="/about"
-                routerLinkActive="activebutton">
-            About
-          </a>
-        </li>
-        <li class="nav-item">
-          <a  class="nav-link"
-              routerLink="/code-projects"
-              routerLinkActive="activebutton">
-            Code Projects
-          </a>
-        </li>
-          <!-- Dropdown -->
-          <li mdbDropdown class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              routerLink = "/creative-collection"
-              routerLinkActive="activebutton"
-              id="navbarDropdownMenuLink"
-              role="button"
-              mdbDropdownToggle
-              aria-expanded="false"
-            >
-              Creative Collection
+        <ng-container *ngFor = "let navItem of leftNavigationItems">
+          <li class = "nav-item" *ngIf = "!navItem.children || navItem.children.length === 0">
+            <a  class = "nav-link"
+                [routerLink]="navItem.routerLink"
+                routerLinkActive="active-link">
+              {{ navItem.name }}
             </a>
-            <ul mdbDropdownMenu class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li>
-                <a  class="dropdown-item"
-                    routerLink = "/creative-collection/photojournal">
-                  Photojournal
-                </a>
-              </li>
-              <li>
-                <a  class="dropdown-item"
-                    routerLink = "/creative-collection/musings">
-                  Musings
-                </a>
-              </li>
-              <li>
-                <a  class="dropdown-item"
-                    routerLink = "/creative-collection/visual-art">
-                  Visual Art
+          </li>
+          <!-- Dropdown -->
+
+<!--          Dropdown-->
+          <li mdbDropdown class="nav-item dropdown" *ngIf = "navItem?.children && navItem.children.length > 0">
+            <a  class = "nav-link dropdown-toggle"
+                [routerLink] = "navItem.routerLink"
+                routerLinkActive="active-link"
+                [id] = "navItem.id"
+                role = "button"
+                mdbDropdownToggle
+
+                aria-expanded = "false" >
+              {{ navItem.name }}
+            </a>
+            <ul mdbDropdownMenu class = "dropdown-menu" [attr.aria-labelledby] = "navItem.id">
+              <li class = "nav-item" *ngFor = "let childNavItem of navItem.children">
+                <a  class = "dropdown-item"
+                    [routerLink]= "childNavItem.routerLink"
+                    routerLinkActive="active-link">
+                  {{ childNavItem.name }}
                 </a>
               </li>
             </ul>
+
+<!--              Creative Collection-->
+<!--            </a>-->
+<!--            <ul mdbDropdownMenu class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">-->
+<!--              <li>-->
+<!--                <a  class="dropdown-item"-->
+<!--                    routerLink = "/creative-collection/photojournal">-->
+<!--                  Photojournal-->
+<!--                </a>-->
+<!--              </li>-->
+<!--              <li>-->
+<!--                <a  class="dropdown-item"-->
+<!--                    routerLink = "/creative-collection/musings">-->
+<!--                  Musings-->
+<!--                </a>-->
+<!--              </li>-->
+<!--              <li>-->
+<!--                <a  class="dropdown-item"-->
+<!--                    routerLink = "/creative-collection/visual-art">-->
+<!--                  Visual Art-->
+<!--                </a>-->
+<!--              </li>-->
+<!--            </ul>-->
           </li>
-        <li class="nav-item">
-          <a  class="nav-link"
-              routerLink="/resume"
-              routerLinkActive="activebutton">
-            Resume
-          </a>
-        </li>
+        </ng-container>
+
       </ul>
       <!-- Left links -->
 
