@@ -1,3 +1,23 @@
+.try-me {
+  position: absolute;
+  right: 7%;
+  z-index: 10;
+  margin-top: .5%;
+  width: 10%;
+  height: auto;
+  background-color: hotpink;
+  border-width: .25rem;
+  border-style: solid;
+  border-image: radial-gradient(darkslateblue, lightcyan) round 5;
+  border-radius: 15%;
+
+  p {
+    text-align: center;
+    font-weight: bold;
+    color: darkslateblue;
+  }
+}
+
 .container {
   padding-top: 2%;
 }
