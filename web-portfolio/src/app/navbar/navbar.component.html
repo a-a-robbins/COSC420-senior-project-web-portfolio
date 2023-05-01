@@ -58,29 +58,6 @@
                 </a>
               </li>
             </ul>
-
-<!--              Creative Collection-->
-<!--            </a>-->
-<!--            <ul mdbDropdownMenu class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">-->
-<!--              <li>-->
-<!--                <a  class="dropdown-item"-->
-<!--                    routerLink = "/creative-collection/photojournal">-->
-<!--                  Photojournal-->
-<!--                </a>-->
-<!--              </li>-->
-<!--              <li>-->
-<!--                <a  class="dropdown-item"-->
-<!--                    routerLink = "/creative-collection/musings">-->
-<!--                  Musings-->
-<!--                </a>-->
-<!--              </li>-->
-<!--              <li>-->
-<!--                <a  class="dropdown-item"-->
-<!--                    routerLink = "/creative-collection/visual-art">-->
-<!--                  Visual Art-->
-<!--                </a>-->
-<!--              </li>-->
-<!--            </ul>-->
           </li>
         </ng-container>
 
@@ -99,6 +76,29 @@
             <i class="fab fa-github"></i>
           </a>
         </li>
+
+        <audio id="audio">
+          <source src="../../assets/ice-cream-truck-audio.mp3" type="audio/mpeg">
+        </audio>
+
+        <button (click)="playAudio()" type="button">
+          <li class = "nav-item">
+            <a class = "audio-text nav-link active" aria-current="page">
+              <i class="audio fa-solid fa-play"></i>
+            </a>
+          </li>
+        </button>
+
+        <button (click)="pauseAudio()" type="button">
+          <li class = "nav-item">
+            <a class = "audio-text nav-link active" aria-current="page">
+              <i class="audio fa-solid fa-pause"></i>
+            </a>
+          </li>
+        </button>
+
+
+
       </ul>
       <!--        Right links-->
     </div>

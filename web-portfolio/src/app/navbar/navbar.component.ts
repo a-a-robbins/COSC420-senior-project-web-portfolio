@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {AudioComponent} from "../audio/audio.component";
 
 type NavigationItem = {
   routerLink: string,
@@ -26,4 +27,15 @@ export class NavbarComponent {
     },
     { routerLink: '/resume', name: 'Resume'}
   ];
+
+
+  playAudio() {
+      let audioPlayer = <HTMLVideoElement>document.getElementById("audio");
+      audioPlayer.play();
+    }
+
+  pauseAudio() {
+      let audioPlayer = <HTMLVideoElement>document.getElementById("audio");
+      audioPlayer.pause();
+    }
 }
