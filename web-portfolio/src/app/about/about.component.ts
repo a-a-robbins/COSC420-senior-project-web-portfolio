@@ -1,6 +1,4 @@
 import {Component} from '@angular/core';
-import { MdbModalRef, MdbModalService } from 'mdb-angular-ui-kit/modal';
-import {ModalComponent} from "../modal/modal.component";
 
 
 @Component({
@@ -11,14 +9,15 @@ import {ModalComponent} from "../modal/modal.component";
 
 export class AboutComponent {
 
-
-  modalRef: MdbModalRef<ModalComponent> | null = null;
-
-  constructor(private modalService: MdbModalService) {}
-
-  openModal() {
-    this.modalRef = this.modalService.open(ModalComponent)
+  quadraticCurve() {
+    var canvas = document.getElementById('myCanvas') as HTMLCanvasElement;
+    var ctx = canvas.getContext('2d');
+    ctx.beginPath();
+    ctx.moveTo(20, 20);
+    ctx.quadraticCurveTo(20, 100, 200, 20);
+    ctx.stroke();
   }
+
   palmAnimation() {
     let id: any = null;
     const elem = document.getElementById("sprite");
