@@ -38,7 +38,7 @@
           <!-- Dropdown -->
 
 <!--          Dropdown-->
-          <li mdbDropdown class="nav-item dropdown" *ngIf = "navItem?.children && navItem.children.length > 0">
+          <li mdbDropdown class="nav-item dropdown" *ngIf="navItem.children && navItem.children.length > 0">
             <a  class = "nav-link dropdown-toggle"
                 [routerLink] = "navItem.routerLink"
                 routerLinkActive="active-link"

@@ -9,14 +9,14 @@ import {Component} from '@angular/core';
 
 export class AboutComponent {
 
-  quadraticCurve() {
-    var canvas = document.getElementById('myCanvas') as HTMLCanvasElement;
-    var ctx = canvas.getContext('2d');
-    ctx.beginPath();
-    ctx.moveTo(20, 20);
-    ctx.quadraticCurveTo(20, 100, 200, 20);
-    ctx.stroke();
-  }
+  // quadraticCurve() {
+  //   var canvas = document.getElementById('myCanvas') as HTMLCanvasElement;
+  //   var ctx = canvas.getContext('2d');
+  //   ctx.beginPath();
+  //   ctx.moveTo(20, 20);
+  //   ctx.quadraticCurveTo(20, 100, 200, 20);
+  //   ctx.stroke();
+  // }
 
   palmAnimation() {
     let id: any = null;
@@ -36,26 +36,26 @@ export class AboutComponent {
     id = setInterval(frame, 50);
 
     function frame() {
-      var self = this;
-
-      if (posTop != 75 && posLeft != 2) {
-        posTop++;
-        posLeft--;
-        elem.style.top = posTop + "%";
-        elem.style.left = posLeft + "%";
-        // self.openModal();
-      } else if (posLeft == 2 && posTop != 75) {
-        posTop++;
-        elem.style.top = posTop + "%";
-        // self.openModal();
-      } else if (posTop == 75 && posLeft != 2) {
-        posLeft--;
-        elem.style.left = posLeft + "%";
-        // self.openModal();
-      } else {
-        clearInterval(id);
-        if(palmMessage) {
-          palmMessage.style.display = "block";
+      if(elem !== null) {
+        if (posTop != 75 && posLeft != 2) {
+          posTop++;
+          posLeft--;
+          elem.style.top = posTop + "%";
+          elem.style.left = posLeft + "%";
+          // self.openModal();
+        } else if (posLeft == 2 && posTop != 75) {
+          posTop++;
+          elem.style.top = posTop + "%";
+          // self.openModal();
+        } else if (posTop == 75 && posLeft != 2) {
+          posLeft--;
+          elem.style.left = posLeft + "%";
+          // self.openModal();
+        } else {
+          clearInterval(id);
+          if(palmMessage) {
+            palmMessage.style.display = "block";
+          }
         }
       }
     }
@@ -80,21 +80,23 @@ export class AboutComponent {
 
 
     function frame() {
-      if (posTop != 0 && posLeft != 7) {
-        posTop--;
-        posLeft--;
-        elem.style.top = posTop + "%";
-        elem.style.left = posLeft + "%";
-      } else if (posLeft == 7 && posTop != 0) {
-        posTop--;
-        elem.style.top = posTop + "%";
-      } else if (posTop == 0 && posLeft != 7) {
-        posLeft--;
-        elem.style.left = posLeft + "%";
-      } else {
-        clearInterval(id);
-        if(mountainMessage) {
-          mountainMessage.style.display = "block";
+      if(elem !== null) {
+        if (posTop != 0 && posLeft != 7) {
+          posTop--;
+          posLeft--;
+          elem.style.top = posTop + "%";
+          elem.style.left = posLeft + "%";
+        } else if (posLeft == 7 && posTop != 0) {
+          posTop--;
+          elem.style.top = posTop + "%";
+        } else if (posTop == 0 && posLeft != 7) {
+          posLeft--;
+          elem.style.left = posLeft + "%";
+        } else {
+          clearInterval(id);
+          if(mountainMessage) {
+            mountainMessage.style.display = "block";
+          }
         }
       }
     }
@@ -118,21 +120,23 @@ export class AboutComponent {
     id = setInterval(frame, 50);
 
     function frame() {
-      if (posTop != 35 && posLeft != 82) {
-        posTop--;
-        posLeft++;
-        elem.style.top = posTop + "%";
-        elem.style.left = posLeft + "%";
-      } else if (posLeft == 82 && posTop != 35) {
-        posTop--;
-        elem.style.top = posTop + "%";
-      } else if (posTop == 35 && posLeft != 82) {
-        posLeft++;
-        elem.style.left = posLeft + "%";
-      } else {
-        clearInterval(id);
-        if(cornMessage) {
-          cornMessage.style.display = "block";
+      if(elem !== null) {
+        if (posTop != 35 && posLeft != 82) {
+          posTop--;
+          posLeft++;
+          elem.style.top = posTop + "%";
+          elem.style.left = posLeft + "%";
+        } else if (posLeft == 82 && posTop != 35) {
+          posTop--;
+          elem.style.top = posTop + "%";
+        } else if (posTop == 35 && posLeft != 82) {
+          posLeft++;
+          elem.style.left = posLeft + "%";
+        } else {
+          clearInterval(id);
+          if(cornMessage) {
+            cornMessage.style.display = "block";
+          }
         }
       }
     }
