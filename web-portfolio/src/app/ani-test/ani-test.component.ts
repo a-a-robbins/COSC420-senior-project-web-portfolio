@@ -9,8 +9,12 @@ import { ModalComponent } from "../modal/modal.component";
 })
 export class AniTestComponent {
   ani() {
-    document.getElementById('img').className = 'grow';
+    let elem = document.getElementById('img');
+    if (elem) {
+      elem.className = 'grow';
+    }
   }
+
 
   myMove1() {
     let id: any = null;
@@ -23,8 +27,10 @@ export class AniTestComponent {
         clearInterval(id);
       } else {
         pos++;
-        elem.style.top = pos + "px";
-        elem.style.left = pos + "px";
+        if(elem) {
+          elem.style.top = pos + "px";
+          elem.style.left = pos + "px";
+        }
       }
     }
   }
@@ -40,8 +46,10 @@ export class AniTestComponent {
         clearInterval(id);
       } else {
         pos++;
-        elem.style.top = pos + "px";
-        elem.style.left = pos + "px";
+        if(elem) {
+          elem.style.top = pos + "px";
+          elem.style.left = pos + "px";
+        }
       }
     }
   }
