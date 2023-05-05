@@ -27,8 +27,13 @@ export class PhotojournalComponent {
       sanDiego.style.display = "none";
     }
 
-    if (elem || elem.style.display == "none") {
-      elem.style.display = "block";
+    if (elem) {
+      if (elem.style.display == "none") {
+        elem.style.display = "block";
+      }
+      else {
+        elem.style.display = "block";
+      }
     }
   }
 
@@ -50,8 +55,13 @@ export class PhotojournalComponent {
       sanDiego.style.display = "none";
     }
 
-    if (elem || elem.style.display == "none") {
-      elem.style.display = "block";
+    if (elem) {
+      if (elem.style.display == "none") {
+        elem.style.display = "block";
+      }
+      else {
+        elem.style.display = "block";
+      }
     }
   }
   sanDiegoInfo() {
@@ -72,8 +82,13 @@ export class PhotojournalComponent {
       sequim.style.display = "none";
     }
 
-    if (elem || elem.style.display == "none") {
-      elem.style.display = "block";
+    if (elem) {
+      if (elem.style.display == "none") {
+        elem.style.display = "block";
+      }
+      else {
+        elem.style.display = "block";
+      }
     }
   }
 
@@ -95,9 +110,15 @@ export class PhotojournalComponent {
       sanDiego.style.display = "none";
     }
 
-    if (elem || elem.style.display == "none") {
-      elem.style.display = "block";
+    if (elem) {
+      if (elem.style.display == "none") {
+        elem.style.display = "block";
+      }
+      else {
+        elem.style.display = "block";
+      }
     }
+
   }
 
 }
