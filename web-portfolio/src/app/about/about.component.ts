@@ -42,15 +42,12 @@ export class AboutComponent {
           posLeft--;
           elem.style.top = posTop + "%";
           elem.style.left = posLeft + "%";
-          // self.openModal();
         } else if (posLeft == 2 && posTop != 75) {
           posTop++;
           elem.style.top = posTop + "%";
-          // self.openModal();
         } else if (posTop == 75 && posLeft != 2) {
           posLeft--;
           elem.style.left = posLeft + "%";
-          // self.openModal();
         } else {
           clearInterval(id);
           if(palmMessage) {
