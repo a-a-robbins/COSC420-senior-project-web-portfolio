@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "@angular/cli": "^20.3.22",
-    "npm": "^11.12.1"
+    "npm": "^11.21.0"
   },
   "devDependencies": {
     "angular-cli-ghpages": "^3.0.2"
